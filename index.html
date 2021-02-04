@@ -1,1 +1,78 @@
-Hello
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+	</style>
+
+</head>
+
+<body>
+
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="bria.html">Bria</a>
+		<a href="liberty.html">Liberty</a>
+		<a href="halley.html">Halley</a>
+	</div>
+
+	<h1>Our Dogs!</h1>
+
+	<h3>Bria, Liberty, and Halley</h3>
+
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<img src="images/bria-img-1.jpeg" alt="dog running on a field" height="600" width="900">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/liberty-img-1.jpg" alt="dog sitting on a bed" height="600" width"600">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/halley-img-1.JPG" alt="dog sitting on a porch" height="600" width="900">
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+ <a href="bria.html">
+  <img src="images/bria-polaroid-1.png" height="376.5" width="313">
+ </a>
+
+<a href="liberty.html">
+  <img src="images/liberty-polaroid-1.png" height="376.5" width="313">
+ </a>
+
+ <a href="halley.html">
+  <img src="images/halley-polaroid-1.png" height="376.5" width="313">
+ </a>
+
+<footer>Made by Scarlett Olson and Annie Carstater</footer>
+</body>
+
+</html>

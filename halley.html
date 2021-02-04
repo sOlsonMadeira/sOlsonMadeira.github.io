@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+	</style>
+
+</head>
+
+<body>
+
+	<body class="halley-page">
+		<div class="topnav topnav-halley">
+			<a class="active" href="index.html">Home</a>
+			<a href="bria.html">Bria</a>
+			<a href="liberty.html">Liberty</a>
+			<a href="halley.html">Halley</a>
+		</div>
+		<h1>Halley!</h1>
+
+ <div class="group">
+  <section>
+    <h2>Backstory</h2>
+      <p>I had wanted a dog since I was little, so last year I decided to make a slideshow to convince my dad to adopt a dog. It ended up working and we were planning on adopting a dog in April, after spring break. When corona started and we had to cancel our spring break, we pushed up our timeline to get a dog,and we found Halley! On March 21st, 2020, we drove to Pennsylvania to go get her!</p>
+  </section>
+
+  <aside>
+    <h2>Characteristics</h2>
+      <ul> 
+        <li>Loves food, especially cheese, chicken, and fish</li>
+        <li>Likes sleeping</li>
+        <li>Loves to play in the snow</li>
+        <li>Always wants to go for a walk</li>
+        <li>Crazy and energetic</li>
+      </ul>
+  </aside>
+  </div>
+
+		<h2 class="pictures">Pictures!</h2>
+
+		<h4>These are cartooned images of Halley, along with the original image!</h4>
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<img src="images/halley-draw-1.png" alt="dog with a birthday cake" height="600" width="400">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/halley-img-3.jpeg" alt="dog with a birthday cake" height="600" width"400">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/halley-draw-2.png" alt="head of dog" height="600" width="900">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/halley-img-2.jpg" alt="head of dog" height="600" width="900">
+  </div>
+</div>
+
+<div class="favorites">
+<h2>Halley's Favorite Things!</h2>
+<ul>
+  <li><a href="https://buddybiscuits.com/product/buddy-biscuits-original-oven-baked-teeny-treats-bacon-cheese/">Treats</a></li>
+  <li><a href="https://www.petco.com/shop/en/petcostore/product/leaps-and-bounds-toss-and-tug-tire-dual-rope-dog-toy">Toy</a></li>
+  <li><a href="https://www.instagram.com/p/CJh3x3jsw6G/">Place</a></li>
+  <li><a href="https://www.instagram.com/p/CKDO8zJsf5U/">Outfit</a></li>
+  <li><a href="https://www.instagram.com/p/CKxbYN9sIAN/">Activity</a></li>
+</ul>
+</div>
+
+<div class="photo">
+  <img src="images/halley-img-4.jpg" alt="puppy sleeping" height="171" width="257">
+  <img src="images/halley-img-5.jpg" alt="dog sitting in grass in a sun patch" height="171" width="257">
+  <img src="images/halley-img-6.jpg" alt="dog sitting in driveway" height="171" width="257">
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+
+<footer>Made by Scarlett Olson and Annie Carstater</footer>
+
+</body>
+
+</html>
